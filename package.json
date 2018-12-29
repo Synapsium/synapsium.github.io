@@ -4,7 +4,9 @@
   "description": "Synapsium - Startup studio web site",
   "main": "index.js",
   "scripts": {
-    "build-theme": "gulp build-theme"
+    "build-site": "jekyll build",
+    "build-theme": "gulp build-theme",
+    "build-all": "npm run build-theme & npm run build-site"
   },
   "keywords": [
     "synapsium"
