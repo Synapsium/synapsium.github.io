@@ -1,15 +1,21 @@
 # Global configuration
 destination: ../dist
+lang: fr_FR
 
 # Site settings
-title: Synapsium | Startup studio
+title: Synapsium \| Startup studio
+author: Nicolas Law-dune
 email: contact@synapsium.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
+keywords: synapsium
+description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://synapsium.com"
+baseurl: ""
+url: ""
+twitter:
+  username: synapsium
+  card: summary
+  creator: nlawdune
 
 # Build settings
 markdown: kramdown
@@ -24,6 +30,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - scss
+  - scripts
   - node_modules
   - README.md
   - gulpfile.js
