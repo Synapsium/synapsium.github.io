@@ -3,13 +3,11 @@ destination: ../dist
 lang: fr_FR
 
 # Site settings
-title: Synapsium \| Startup studio
+title: Synapsium - Startup studio
 author: Nicolas Law-dune
 email: contact@synapsium.com
 keywords: synapsium
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Le collectif de freelance seniors, passionnés et spécialistes des nouvelles technologies et du digital.
 baseurl: ""
 url: "https://synapsium.com"
 twitter:
