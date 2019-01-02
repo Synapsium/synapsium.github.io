@@ -4,7 +4,8 @@
   "description": "Synapsium - Startup studio web site",
   "main": "index.js",
   "scripts": {
-    "build-site": "jekyll build --config _config.yml,_config_production.yml",
+    "serve-site": "jekyll serve --watch --config _config.yml,_config_development.yml",
+    "build-site": "jekyll build --config _config.yml",
     "build-theme": "gulp build-theme",
     "build-all": "npm run build-theme & npm run build-site"
   },

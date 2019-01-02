@@ -1,7 +1,7 @@
 # Global configuration
 destination: ../dist
 lang: fr_FR
-environment: "development"
+environment: "production"
 
 # Site settings
 title: Synapsium - Startup studio
