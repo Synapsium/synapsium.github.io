@@ -15,7 +15,7 @@
 
     {% include scripts.html %}
 
-    {% if site.environment == "production" %}
+    {% if site.environment == "production" or jekyll.environment == "production" %}
       {% include analytics.html %}
     {% endif %}
   </body>
