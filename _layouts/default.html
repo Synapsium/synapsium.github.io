@@ -14,5 +14,9 @@
     </main>
 
     {% include scripts.html %}
+
+    {% if site.environment == "production" %}
+      {% include analytics.html %}
+    {% endif %}
   </body>
 </html>
