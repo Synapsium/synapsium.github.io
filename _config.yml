@@ -4,11 +4,11 @@ lang: fr_FR
 environment: "production"
 
 # Site settings
-title: Synapsium - Collectif freelance
+title: Synapsium - Accélérateur Digital & Product Factory
 author: Nicolas Law-dune
 email: contact@synapsium.com
 keywords: freelance,consultant,digital,transformation,developpement,data,startup,innovation,business,marketing,produit,application,stratégie
-description: Le collectif de freelance seniors, passionnés et spécialistes des nouvelles technologies et du digital.
+description: Un collectif d’experts indépendants spécialistes des nouvelles technologies et du digital | accélérateur digital pour startup & PME | conception et développement de produits sur mesure.
 baseurl: ""
 url: "https://synapsium.com"
 twitter:
