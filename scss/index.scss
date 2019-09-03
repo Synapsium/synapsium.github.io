@@ -14,6 +14,10 @@ body {
     color: #3a3a3a;
 }
 
+.color-pink {
+    color:#cc0e63;
+}
+
 .navigation {
     padding: 15px 2.5% 15px 2.5%;
     width: 100%;
@@ -40,7 +44,6 @@ body {
     margin: 0px auto;
     padding: 0px;
     box-sizing: border-box;
-    overflow: hidden;
     width: 100%;
     height: auto;
     float: none;
@@ -50,131 +53,301 @@ body {
         z-index: 1;
 
         .section-content {
-            padding: 0px 10% 0px 10%;
+            padding: 0px 15% 0px 15%;
             z-index: 9999;
 
-            @media screen and (max-width: 576px) {
-                padding: 0px 5% 0px 5%;
-            }
-        }
-    }
-}
-
-.header {
-    position: relative;
-    padding-top: 175px;
-    padding-bottom: 105px;
-
-    @media screen and (max-width: 576px) {
-        padding-top: 125px;
-        padding-bottom: 35px;
-    }
-
-    &.featured {
-        min-height: 100vh;
-    }
-
-    .content {
-        .trombi {
-            padding-bottom: 1rem;
-            a {
-                padding-right: .7rem;
-
-                img {
-                    opacity: 0.9;
-                    width: 45px;
-                    border-radius: 100%;
-                    transition: all 0.4s;
-
-                    @media screen and (max-width: 768px) {
-                        width: 35px;
-                        line-height: 2rem;
-                    }
-                }
-            }
-
-            @media screen and (max-width: 768px) {
-                padding-right: .6rem;
-            }
-        }
-
-        .title {
-            font: 43px/54px "gilroy-bold", sans-serif;
-            font-weight: 500;
-            color: #444;
-    
             @media screen and (max-width: 1410px) {
-                font-size: 54px;
-                line-height: 60px;
+                padding: 0px 10% 0px 10%;
             }
     
             @media screen and (max-width: 1200px) {
-                font-size: 46px;
-                line-height: 52px;
+                padding: 0px 5% 0px 5%;
             }
-
-            @media screen and (max-width: 768px) {
-                font-size: 34px;
-                line-height: 42px;
-            }
-
-            @media screen and (max-width: 576px) {
-                font-size: 32px;
-                line-height: 40px;
-            }
-        }
-
-        .description{
-
-            font-size: 1.45rem;
-            line-height: 2.4rem;
-
-            @media screen and (max-width: 768px) {
-                font-size: 1.3rem;
-                line-height: 2.2rem;
-            }
-
-            @media screen and (max-width: 576px) {
-                font-size: 1.2rem;
-                line-height: 2.2rem;
+    
+            .content {
+                .trombi {
+                    padding-bottom: 1rem;
+                    a {
+                        padding-right: .7rem;
+        
+                        img {
+                            opacity: 0.9;
+                            width: 45px;
+                            border-radius: 100%;
+                            transition: all 0.4s;
+        
+                            @media screen and (max-width: 768px) {
+                                width: 35px;
+                                line-height: 2rem;
+                            }
+                        }
+                    }
+        
+                    @media screen and (max-width: 768px) {
+                        padding-right: .6rem;
+                    }
+                }
+        
+                .title {
+                    font: 43px/54px "gilroy-bold", sans-serif;
+                    font-weight: 500;
+                    color: #444;
+            
+                    @media screen and (max-width: 1410px) {
+                        font-size: 40px;
+                        line-height: 48px;
+                    }
+            
+                    @media screen and (max-width: 1200px) {
+                        font-size: 34px;
+                        line-height: 45px;
+                    }
+        
+                    @media screen and (max-width: 768px) {
+                        font-size: 24px;
+                        line-height: 42px;
+                    }
+        
+                    @media screen and (max-width: 576px) {
+                        font-size: 22px;
+                        line-height: 40px;
+                    }
+                }
+        
+                .description{
+        
+                    font-size: 1.3rem;
+                    line-height: 2.4rem;
+        
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.2rem;
+                        line-height: 2.2rem;
+                    }
+        
+                    @media screen and (max-width: 576px) {
+                        font-size: 1.1rem;
+                        line-height: 2.2rem;
+                    }
+                }
             }
         }
     }
 }
 
 .footer {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     padding-top: 60px;
     background-color: #f2f4f9;
 
     .footer-details{
-        width:250px;
         font-size:13px;
 
         a {
             color: #191919;
         }
+
+        &.about p{
+            line-height: 1.8rem;
+        }
     }
 }
 
-.service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    h2 {
-        font: 1.1rem "gilroy-bold", sans-serif;
+.featured {
+    min-height: 80vh;
+    position: relative;
+    padding-top: 100px !important;
+    padding-bottom: 105px !important;
+
+    @media screen and (max-width: 576px) {
+        padding-top: 65px !important;
+        padding-bottom: 35px !important;
     }
 
-    .icon{
-        height: 40px;
-        width: 40px;
-        margin-bottom: 20px;
+    img.bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 700px;
+
+        @media screen and (max-width: 1410px) {
+            height: 600px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            height: 500px;
+        }
+
+        @media screen and (max-width: 990px) {
+            height: 350px;
+        }
+
+        @media screen and (max-width: 576px) {
+            height: 250px;
+        }
+    }
+}
+
+.approach {
+    padding-top: 20vh !important;
+    padding-bottom: 20vh !important;
+    height: 2000px;
+    background-color:#243A51;
+
+    .slides {
+        position: sticky;
+        top: 25vh;
+        display: flex;
+        flex-direction: row;
+        color:#ffffff;
     
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
+        .labels {
+            flex:3;
+    
+            h1 {
+                font: 40px/54px "gilroy-bold", sans-serif;
+                padding-bottom: 2rem;
+                letter-spacing: .1rem;
+            }
+    
+            p {
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+    
+            .links {
+                padding-top: 2rem;
+                .link {
+                    padding: .8rem 0;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+        
+                    i {
+                        padding-right: .8rem;
+                    }
+    
+                    &.active {
+                        color:#cc0e63;
+                    }
+                }
+            }
+        }
+    
+        .illustrations {
+            flex:4;
+            position: relative;
+    
+            .illustration {
+                position: absolute;
+                display:flex;
+                visibility: hidden;
+                opacity: 0;
+                flex-direction: column;
+                align-items: center;
+                transition: all 1000ms cubic-bezier(0, 1.1, 1, 0.975);
+                transform: translateY(-50px);
+    
+    
+                &.active {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all 2000ms cubic-bezier(0, 1.1, 1, 0.975);
+                    transition-delay: 0.2s;
+                    transform: translateY(0px);
+                }
+    
+                img {
+                    width: 100%;
+                }
+    
+                p {
+                    padding-top: 3rem;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+.customers {
+    position: relative;
+
+    .bg {
+        background-image: url('/assets/images/bg/worktogether.png');
+        background-size: contain;
+        position: absolute;
+        width:100%;
+        height: 100%;
+        opacity:.05;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0;
+        justify-content: center;
+
+        .customer-logo {
+            height: 50px;
+            justify-content: center;
+            display: flex;
+            padding: 0 2.5rem;
+    
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .collaboration {
+        text-align: center;
+        padding: 2rem 0 3rem 0;
+
+        h1 {
+            font: 30px "gilroy-bold", sans-serif;
+            padding-bottom: 1rem;
+            letter-spacing: .1rem;
+        }
+
+        p {
+            padding-bottom: 2rem;
+        }
+
+    }
+}
+
+.services {
+    background-color: #f7f8fb;
+    padding: 4rem 0;
+
+    h1 {
+        font: 40px/54px "gilroy-bold", sans-serif;
+        padding-bottom: 3rem;
+        letter-spacing: .1rem;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            font: 1.1rem "gilroy-bold", sans-serif;
+        }
+    
+        .icon{
+            height: 40px;
+            width: 40px;
+            margin-bottom: 20px;
+        
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 }
@@ -197,13 +370,6 @@ body {
     }
 
     .img {
-        // &.right {
-        //     margin-right: calc(50% - 50vw);
-        // }
-        // &.left {
-        //     margin-left: calc(50% - 50vw);
-        // }
-
         img {
             width:100%;
         }
@@ -222,6 +388,14 @@ body {
 }
 
 .team {
+    background-color: #f7f8fb;
+
+    h1 {
+        font: 40px/54px "gilroy-bold", sans-serif;
+        padding-bottom: 3rem;
+        letter-spacing: .1rem;
+    }
+
     .profil {
         padding-bottom:2rem;
         text-align: center;
