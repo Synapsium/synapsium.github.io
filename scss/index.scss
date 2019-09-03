@@ -110,7 +110,7 @@ body {
         
                     @media screen and (max-width: 576px) {
                         font-size: 22px;
-                        line-height: 40px;
+                        line-height: 2rem;
                     }
                 }
         
@@ -126,7 +126,7 @@ body {
         
                     @media screen and (max-width: 576px) {
                         font-size: 1.1rem;
-                        line-height: 2.2rem;
+                        line-height: 1.5rem;
                     }
                 }
             }
@@ -325,7 +325,8 @@ body {
 
 .customers {
     position: relative;
-
+    background: #7594ec30;
+    
     .bg {
         background-image: url('/assets/images/bg/worktogether.png');
         background-size: contain;
