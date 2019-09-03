@@ -193,12 +193,21 @@ body {
     height: 2000px;
     background-color:#243A51;
 
+    @media screen and (max-width: 990px) {
+        padding-bottom: 50vh !important;
+    }
+
     .slides {
         position: sticky;
         top: 25vh;
         display: flex;
         flex-direction: row;
         color:#ffffff;
+        
+        @media screen and (max-width: 990px) {
+            flex-direction: column;
+            top: 10vh;
+        }
     
         .labels {
             flex:3;
@@ -207,22 +216,48 @@ body {
                 font: 40px/54px "gilroy-bold", sans-serif;
                 padding-bottom: 2rem;
                 letter-spacing: .1rem;
+
+                @media screen and (max-width: 990px) {
+                    padding-bottom: 1rem;
+                }
             }
     
             p {
                 font-size: 1.2rem;
                 line-height: 2rem;
+
+                @media screen and (max-width: 990px) {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
             }
     
             .links {
                 padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (max-width: 990px) {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    flex-direction: row;
+                }
+
                 .link {
                     padding: .8rem 0;
                     font-size: 1.3rem;
                     font-weight: 600;
+
+                    @media screen and (max-width: 990px) {
+                        padding: .3rem .5rem;
+                        font-size: 1rem;
+                    }
         
                     i {
                         padding-right: .8rem;
+                        @media screen and (max-width: 990px) {
+                            display: none;
+                        }
                     }
     
                     &.active {
@@ -235,7 +270,12 @@ body {
         .illustrations {
             flex:4;
             position: relative;
-    
+            padding-left: 2rem;
+
+            @media screen and (max-width: 990px) {
+                padding-left: 0;
+            }
+
             .illustration {
                 position: absolute;
                 display:flex;
@@ -257,6 +297,11 @@ body {
     
                 img {
                     width: 100%;
+
+                    @media screen and (max-width: 990px) {
+                        width: 80%;
+                        padding-top: 1rem;
+                    }
                 }
     
                 p {
@@ -264,6 +309,12 @@ body {
                     font-size: 1.2rem;
                     line-height: 2rem;
                     text-align: center;
+
+                    @media screen and (max-width: 990px) {
+                        padding-top: 2rem;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
                 }
             }
         }
