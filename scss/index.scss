@@ -185,8 +185,12 @@ body {
             height: 250px;
         }
 
-        @media screen and (max-height: 576px) {
+        @media screen and (max-height: 736px) {
             display: none;
+        }
+
+        @media screen and (max-height: 812px) {
+            height: 190px;
         }
     }
 }
