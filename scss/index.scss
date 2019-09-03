@@ -184,6 +184,10 @@ body {
         @media screen and (max-width: 576px) {
             height: 250px;
         }
+
+        @media screen and (min-height: 576px) {
+            display: none;
+        }
     }
 }
 
@@ -342,6 +346,7 @@ body {
         flex-direction: row;
         padding: 2rem 0;
         justify-content: center;
+        overflow: hidden;
 
         .customer-logo {
             height: 50px;
