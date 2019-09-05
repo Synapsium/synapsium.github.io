@@ -104,13 +104,13 @@ body {
                     }
         
                     @media screen and (max-width: 768px) {
-                        font-size: 24px;
+                        font-size: 32px;
                         line-height: 42px;
                     }
         
                     @media screen and (max-width: 576px) {
-                        font-size: 22px;
-                        line-height: 2rem;
+                        font-size: 30px;
+                        line-height: 40px;
                     }
                 }
         
@@ -159,8 +159,9 @@ body {
     padding-bottom: 105px !important;
 
     @media screen and (max-width: 576px) {
-        padding-top: 65px !important;
-        padding-bottom: 35px !important;
+        min-height: 60vh;
+        padding-top: 10vh !important;
+        padding-bottom: 10vh !important;
     }
 
     img.bg {
@@ -183,8 +184,10 @@ body {
         }
 
         @media screen and (max-width: 576px) {
-            height: 250px;
+            display:none;
         }
+
+
 
         @media screen and (max-height: 736px) {
             height: 500px;
@@ -201,17 +204,26 @@ body {
         @media screen and (max-height: 812px) and (max-width: 990px) {
             height: 320px;
         }
+
+        @media screen and (max-height: 812px) and (max-width: 576px) {
+            display: none;
+        }
     }
 }
 
 .approach {
     padding-top: 20vh !important;
-    padding-bottom: 20vh !important;
+    padding-bottom: 25vh !important;
     height: 2000px;
     background-color:#243A51;
 
     @media screen and (max-width: 990px) {
+        padding-top: 10vh !important;
         padding-bottom: 50vh !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-top: 5vh !important;
     }
 
     .slides {
@@ -236,6 +248,11 @@ body {
 
                 @media screen and (max-width: 990px) {
                     padding-bottom: 1rem;
+                    font-size: 30px;
+                }
+
+                @media screen and (max-width: 576px) {
+                    font-size: 30px;
                 }
             }
     
@@ -399,6 +416,15 @@ body {
         font: 40px/54px "gilroy-bold", sans-serif;
         padding-bottom: 3rem;
         letter-spacing: .1rem;
+
+        @media screen and (max-width: 990px) {
+            padding-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 30px;
+        }
     }
 
     .service {
