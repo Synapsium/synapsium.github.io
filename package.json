@@ -4,8 +4,8 @@
   "description": "Synapsium - Startup studio web site",
   "main": "index.js",
   "scripts": {
-    "serve-site": "jekyll serve --watch --config _config.yml,_config_development.yml",
-    "build-site": "jekyll build --config _config.yml",
+    "serve-site": "bundle exec jekyll serve --watch --config _config.yml,_config_development.yml",
+    "build-site": "bundle exec jekyll build --config _config.yml",
     "build-theme": "gulp build-theme",
     "build-all": "npm run build-theme & npm run build-site"
   },
@@ -14,7 +14,9 @@
   ],
   "author": "Law-dune Nicolas",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
   "devDependencies": {
     "autoprefixer": "^7.2.3",
     "codelyzer": "^4.0.1",
