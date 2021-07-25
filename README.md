@@ -12,7 +12,9 @@
 ## Getting started
 
 1. Run `npm install`
-2. Run `gulp watch`
+2. Run `bundle update`
+2. Run `gem update`
+4. Run `gulp watch`
 
 ## Build theme
 
