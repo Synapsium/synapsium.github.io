@@ -72,10 +72,6 @@ body {
                 padding: 0px 5% 0px 5%;
             }
 
-            @media screen and (max-width: 576px) and (max-height: 900px) {
-                height: 65vh;
-            }
-    
             .content {
                 .trombi {
                     padding-bottom: 1rem;
@@ -164,8 +160,35 @@ body {
     }
 }
 
+.service-details {
+    position: relative;
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+
+    p {
+        line-height: 32px;
+    }
+
+    img {
+        max-height: 300px;
+
+        @media screen and (max-width: 576px) {
+            max-height: auto;
+            width: 100%;
+        }
+    }
+
+    .mt-10 {
+        margin-top:10rem;
+
+        @media screen and (max-width: 576px) {
+            margin-top:6rem;
+        }
+    }
+}
+
 .featured {
-    min-height: 65vh;
+    min-height: 60vh;
     position: relative;
     padding-top: 60px !important;
     padding-bottom: 40px !important;
@@ -177,7 +200,7 @@ body {
     }
 
     @media screen and (max-height: 900px) {
-        min-height: 95vh;
+        min-height: 85vh;
         padding-bottom: 0px !important;
     }
 
@@ -244,6 +267,7 @@ body {
     background: #243A51;
     color: white;
     padding: 4rem 0;
+    text-align: center;
 
     h1 {
         font: 34px/48px "gilroy-bold", sans-serif;
@@ -427,6 +451,13 @@ body {
 .customers {
     position: relative;
     background: #7594ec30;
+
+    h2 {
+        font: 1.2rem "gilroy-bold", sans-serif;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 3rem;
+    }
     
     .bg {
         background-image: url('/assets/images/bg/worktogether.png');
@@ -451,6 +482,10 @@ body {
             justify-content: center;
             display: flex;
             padding: 0 2.5rem;
+
+            &.o7{
+                opacity: .7;
+            }
     
             img {
                 height: 100%;
