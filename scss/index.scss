@@ -170,12 +170,7 @@ body {
     }
 
     img {
-        max-height: 300px;
-
-        @media screen and (max-width: 576px) {
-            max-height: auto;
-            width: 100%;
-        }
+        width: 100%;
     }
 
     .mt-10 {
@@ -208,7 +203,7 @@ body {
         position: absolute;
         bottom: 0px;
         right: 0px;
-        height: 450px;
+        height: 70%;
         z-index: -1;
 
         @media screen and (max-width: 1200px) {
@@ -259,6 +254,7 @@ body {
         opacity:.03;
         left: 0;
         background-repeat: no-repeat;
+        z-index: -1;
     }
 }
 
@@ -299,6 +295,18 @@ body {
 
     p{
         font-size: 18px;
+    }
+}
+
+.partners{
+    img {
+        &.max-w-100 {
+            max-width: 100px;
+        }
+
+        &.max-w-200 {
+            max-width: 200px;
+        }
     }
 }
 

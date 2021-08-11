@@ -4,10 +4,10 @@ lang: fr_FR
 environment: "production"
 
 # Site settings
-title: Synapsium - Accélérateur Digital & Product Factory
+title: Synapsium - Conseil en Transformation Numérique & Product Factory
 author: Nicolas Law-dune
 email: contact@synapsium.com
-keywords: freelance,consultant,digital,transformation,developpement,data,startup,innovation,business,marketing,produit,application,stratégie
+keywords: freelance,consultant,digital,transformation,developpement,data,startup,innovation,business,marketing,produit,application,stratégie,numerique,montpellier,occitanie,pme
 description: Nous sommes un cabinet indépendant de conseil en transformation numérique, nous vous accompagnons dans vos projets de transformation et d’innovation sur le digital.
 baseurl: ""
 url: "https://synapsium.com"
