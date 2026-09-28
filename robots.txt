@@ -1,1 +1,4 @@
-Sitemap: https://synapsium.com/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://synapsium.com/sitemap-index.xml
